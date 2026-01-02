@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futura Tyres | Advanced Mobility Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">FUTURA <span>TYRES</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#order" class="btn-order">Order Now</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-btn">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">Reinventing the <span>Wheel</span></h1>
+            <p class="fade-in">Precision engineering for every terrain. From luxury cars to heavy-duty multi-axle
+                behemoths.</p>
+            <div class="hero-btns">
+                <a href="#models" class="btn-primary">Explore Models</a>
+                <a href="#about" class="btn-secondary">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="hero_tyre.png" alt="Futura Performance Tyre" class="floating-tyre">
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Defining Performance Since 1998</h2>
+                    <p>Futura Tyres has been at the forefront of rubber innovation, combining aerospace-grade materials
+                        with cutting-edge tread designs. We don't just make tyres; we craft the interface between your
+                        vehicle and the world.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-num">25+</span>
+                            <span class="stat-label">Years of Innovation</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">500k+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <img src="workshop.png" alt="Futura Lab">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="exp-section">
+        <div class="section-title">
+            <h2>The Experience</h2>
+            <p>Unmatched grip. Silent rides. Absolute control.</p>
+        </div>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <h3>Vibration Control</h3>
+                <p>Advanced polymers that absorb road noise and micro-vibrations.</p>
+            </div>
+            <div class="exp-card">
+                <h3>All-Weather Grip</h3>
+                <p>Patented tread patterns that clear water and mud instantly.</p>
+            </div>
+            <div class="exp-card">
+                <h3>Long-Life Tech</h3>
+                <p>Sustainable compounds that last 40% longer than standard tyres.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="models" class="models-section">
+        <h2 class="section-title">Tyre Models</h2>
+        <div class="models-container">
+            <!-- Model 1 -->
+            <div class="model-card" data-id="1" data-name="Cyber-Traction S1" data-price="299">
+                <div class="model-img">
+                    <img src="hero_tyre.png" alt="S1 Sport">
+                </div>
+                <h3>Cyber-Traction S1</h3>
+                <p>High-performance car tyre with neon-grip technology.</p>
+                <p class="price">$299</p>
+                <button class="add-to-cart">Add to Order</button>
+            </div>
+            <!-- Model 2 -->
+            <div class="model-card" data-id="2" data-name="Terra-Master X4" data-price="450">
+                <div class="model-img">
+                    <img src="offroad_tyre.png" alt="X4 Offroad">
+                </div>
+                <h3>Terra-Master X4</h3>
+                <p>Rugged 4x4 off-road tyre for extreme adventures.</p>
+                <p class="price">$450</p>
+                <button class="add-to-cart">Add to Order</button>
+            </div>
+            <!-- Model 3 -->
+            <div class="model-card" data-id="3" data-name="Atlas Payload HD" data-price="1200">
+                <div class="model-img">
+                    <img src="truck_tyre.png" alt="HD Truck">
+                </div>
+                <h3>Atlas Payload HD</h3>
+                <p>Heavy-duty multi-axle truck tyre for industrial use.</p>
+                <p class="price">$1200</p>
+                <button class="add-to-cart">Add to Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="facility-section">
+        <div class="container">
+            <h2>Our Facilities</h2>
+            <div class="fac-content">
+                <div class="fac-img">
+                    <img src="workshop.png" alt="Service Bay">
+                </div>
+                <div class="fac-info">
+                    <h3>Futura Tyre Lab</h3>
+                    <ul>
+                        <li>3D Alignment Scanning</li>
+                        <li>Nitrogen Inflation Bays</li>
+                        <li>Dynamic Stress Testing</li>
+                        <li>Mobile Fitting Fleet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="ai-chat-btn" class="ai-toggle">
+        <span class="ai-icon">🤖</span>
+    </div>
+
+    <div id="ai-chat-container" class="ai-chat-wrapper hidden">
+        <div class="ai-chat-header">
+            <h3>Futura AI Assistant</h3>
+            <span id="close-chat">×</span>
+        </div>
+        <div id="ai-messages" class="ai-messages">
+            <div class="msg bot">Hello! I'm your Futura AI. How can I help you choose the right tyres today?</div>
+        </div>
+        <div id="ai-suggestions" class="ai-suggestions">
+            <button class="suggestion-btn">What models do you have?</button>
+            <button class="suggestion-btn">Do you have tyres for 4x4?</button>
+            <button class="suggestion-btn">How do I order?</button>
+        </div>
+        <div class="ai-input-area">
+            <input type="text" id="ai-input" placeholder="Ask about tyres, order status...">
+            <button id="ai-send">Send</button>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+            <h3>Your Order</h3>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: $<span id="total-val">0</span></div>
+            <div class="cart-actions">
+                <button id="checkout-btn" class="btn-primary">Complete Order</button>
+                <button id="close-cart" class="btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Futura Tyres. Engineering the Future of Traction.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="ai-assistant.js"></script>
+</body>
+
+</html>
